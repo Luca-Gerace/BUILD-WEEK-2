@@ -1,0 +1,201 @@
+.simulazione-nav{
+    background-color: red;
+    /* width: 100vw; */
+    height: 70px;
+}
+
+/* Stilizzo il contenuto principale fornendogli delle caratteristiche generali */
+main{
+    max-width: 1300px;
+    margin-top: 5vh;
+}
+
+img {
+    width: 100%;
+}
+
+/*Stilizzo in modo tale che se punto al condividi o salva mi esca un puntatore"*/
+
+.like-share{
+    cursor: pointer;
+}
+
+.like-share:hover{
+    background-color: rgb(247, 247, 247);
+} 
+
+/* Stilizzo la "riga" delle immagini dell'appartamento */
+.prima-colonna-immagini img{
+    height: 50vh;
+} 
+
+.seconda-colonna-immagini img{
+    height: 24vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.immagine-sopra-destra{
+    border-top-right-radius: var(--bs-border-radius-xl);
+}
+
+.immagine-sotto-destra{
+    border-bottom-right-radius: var(--bs-border-radius-xl);
+}
+
+@media screen and (max-width: 767px) {
+    .immagine-sopra-sinistra{
+        border-top-left-radius: var(--bs-border-radius-xl);
+    }
+    .immagine-sotto-sinistra{
+        border-bottom-left-radius: var(--bs-border-radius-xl);
+    }
+    .bigger-image{
+        border-top-right-radius: var(--bs-border-radius-xl);
+        border-bottom-right-radius: var(--bs-border-radius-xl);
+    }
+}
+
+.overlay{
+    position: absolute;
+    /top:0;
+    left: 0.5vw;
+    right: 0;
+    bottom:0; 
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 97%;
+    height: 100%;
+    opacity: 0;
+    border-top-left-radius: var(--bs-border-radius-xl);
+    border-bottom-left-radius: var(--bs-border-radius-xl);
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0; 
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* border-top-left-radius: var(--bs-border-radius-xl);
+    border-bottom-left-radius: var(--bs-border-radius-xl); */
+}
+
+.overlay2:hover{
+    opacity: 1;
+}
+
+.overlay2tr{
+    border-top-right-radius: var(--bs-border-radius-xl);
+}
+
+.overlay2br{
+    border-bottom-right-radius: var(--bs-border-radius-xl);
+}
+
+@media screen and (max-width: 767px) {
+    .overlay2tl{
+        border-top-left-radius: var(--bs-border-radius-xl);
+    }
+    .overlay2bl{
+        border-bottom-left-radius: var(--bs-border-radius-xl);
+    }
+    .overlay{
+        position: absolute;
+        top:0;
+        left: 1.2vw;
+        right: 0;
+        bottom:0; 
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 2;
+        width: 97.5%;
+        height: 100%;
+        opacity: 0;
+        border-top-left-radius: var(--bs-border-radius-xl);
+        border-bottom-left-radius: var(--bs-border-radius-xl);
+        border-top-right-radius: var(--bs-border-radius-xl);
+        border-bottom-right-radius: var(--bs-border-radius-xl);
+    }
+
+}
+
+/* Stilizzo la finestrina per vedere i prezzi */
+.card{
+    margin-top: 10vh;
+    top: 10vh;
+    /* margin-bottom: 10vh; */
+    position: sticky;
+}
+
+@media screen and (max-width: 991px) {
+    .card{
+        width: 70vw;
+    }
+}
+
+.bi-star-fill{
+    color: rgb(255, 56, 92);
+}
+
+.btn.fw-bold{
+    background-color: rgb(255, 56, 92);
+}
+
+input[type=date]{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+input[type=date]:focus{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.form-control {
+    z-index: -1;
+}
+
+/* Stilizzo il form in cui si ha la possbilità di lasciare una recensione*/
+.input-group .row{
+    width: 55vw;
+}
+
+@media screen and (max-width: 767px) {
+    .input-group .row{
+        width: 80vw
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .input-group .row{
+        width: 60vw
+    }
+}
+
+.col-12 textarea{
+    min-height: 100px;
+    resize: none;
+}
+
+.input-group{
+    margin-bottom: 100px;
+}
+
+/* Stilizzo la sezione dei commenti */
+
+.profile-pic{
+    width: 70px;
+    cursor: pointer;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="appartamento.css">
+</head>
+<body>
+
+    <div class="simulazione-nav"></div>
+
+    <!-- Nella main sectionvado ad inserire il contenuto principale della pagine -->
+    <main class="m-auto px-5">
+
+        <h3>Blarmor home</h3>
+
+        <!-- Inserisco un contenitore contenente il voto e la possibilità di salvare/condividere l'appartamento -->
+        <div class="container-fluid p-0 d-flex justify-content-between ">
+            <div><span class="fw-bold">4,</span> 6 ratings · Inverness</div>
+            <div class="d-flex">
+                <div class="p-1 like-share">
+                    <i class="bi bi-upload"></i> Share
+                </div>
+                <div class="p-1 like-share">
+                    <i class="bi bi-heart"></i> Save
+                </div>
+            </div>
+        </div>
+
+        <!-- Inserisco il conenitore contenente le immagini, uso il sistema row/column per avere le proporzioni corrette -->
+        <div class="container-fluid p-0 mt-3">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 prima-colonna-immagini position-relative">
+                    <div>
+                        <div class="overlay p-3"></div>
+                        <img src="../assets/1.webp" alt="image-1" class="img-fluid bigger-image rounded-start-4 ">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 seconda-colonna-immagini">
+                    <div class="row g-3 mb-3 ">
+                        <div class="col-6">
+                            <div class="position-relative">
+                                <div class="overlay2 overlay2tl p-3"></div>
+                                <img src="../assets/2.webp" alt="image-1" class="img-fluid immagine-sopra-sinistra">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="position-relative">
+                                <div class="overlay2 overlay2tr p-3"></div>
+                                <img src="../assets/3.webp" alt="image-1" class="img-fluid immagine-sopra-destra">
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="position-relative">
+                                <div class="overlay2 overlay2bl p-3"></div>
+                                <img src="../assets/4.webp" alt="image-1" class="img-fluid immagine-sotto-sinistra">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="position-relative">
+                                <div class="overlay2 overlay2br p-3"></div>
+                                <img src="../assets/5.webp" alt="image-1" class="img-fluid immagine-sotto-destra">
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <!-- Inserisco un altro contenitore in cui ci sono varie caratteristiche dell'appartamento e le date in cui è dispinibile uso il sistema row/column per mantenere le proporzioni e renderlo responsive-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- Questo è il lato sinistro con le varie caratteristiche dell'appartamento -->
+                <div class="col-12 col-lg-8">
+                    <h4 class="mt-5 fw-bold">House - Host:Erica</h4>
+                    <div> 3 rooms · Perfect place to visit the Loch Ness and go looking for Nessie.</div>
+                    <div><small class="fw-bolder ">Show host details</small></div>
+                    <div class="d-flex mt-5">
+                        <div class="d-flex align-items-center me-3 ">
+                            <i class="bi bi-house-door fw-bold fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold mb-2">
+                                House
+                            </div>
+                            <div>
+                                <small>You will have the hole promise for you</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div class="d-flex align-items-center me-3 ">
+                            <i class="bi bi-stars fw-bold fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold mb-2">
+                                Advanced Cleaning Methods
+                            </div>
+                            <div>
+                                <small>The host is committing to our 5-step cleaning process.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div class="d-flex align-items-center me-3 ">
+                            <i class="bi bi-house-door fw-bold fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold mb-2">
+                                Inverness
+                            </div>
+                            <div>
+                                <small>5Kilmore Rd</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div class="d-flex align-items-center me-3 ">
+                            <i class="bi bi-calendar3 fw-bold fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold mb-2">
+                                Cancellation Terms and Fees
+                            </div>
+                            <div>
+                                <small>Add your travel dates to know details about cancellation fees and terms.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-5">
+                        <div class="d-flex align-items-center me-3 ">
+                            <i class="bi bi-book fw-bold fs-3"></i>
+                        </div>
+                        <div>
+                            <div class="fw-bold mb-2">
+                                Rules Of The House
+                            </div>
+                            <div>
+                                <small>It's forbidden to host parties, bring animals and smoke.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Questo è il alto destro in cui è presente un card da compilare per vedere le date disponibili -->
+                <div class="col-12 col-lg-4">
+                    <div class="card rounded-4 border-0 shadow-lg">
+                        <div class="card-body d-flex row ">
+                            <div class="fs-4 col-6 ">
+                                Add dates to see the prices
+                            </div>
+                            <div class="col-6 text-end">
+                                <i class="bi bi-star-fill me-2 "></i> 4.0, 6 reviews
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center border border-black rounded-4 mx-3 mb-2">
+                            <div class="d-flex justify-content-center ">
+                                <div class="d-flex border-end border-black border-bottom container-fluid justify-content-between py-3">
+                                    <input type="date">
+                                </div>
+                                <div class="d-flex border-black border-bottom container-fluid justify-content-between py-3">
+                                    <input type="date">
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control rounded-4 border-0 py-3" placeholder="Guests">
+                            </div>
+                        </div>
+                        <button type="button" class="btn fw-bold text-white mx-3 py-2 rounded-3 mb-4 ">Cancel booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Questa è la sezione in cui c'è il form per lasciare una valutazione dell'appartamento -->
+        <div class="input-group mt-5 ">
+            <div class="row gx-2 gy-3 ">
+                <div class="col-8">
+                    Name
+                    <input type="text" class="form-control mt-2 " placeholder="Enter Name" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-4 ">
+                    Rating
+                    <select class="form-select mt-2 " id="inputGroupSelect01">
+                        <option selected>★</option>
+                        <option value="1">★ 1</option>
+                        <option value="2">★ 2</option>
+                        <option value="3">★ 3</option>
+                        <option value="4">★ 4</option>
+                        <option value="5">★ 5</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    Review
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Type in you review"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Questa è le sezione dei commenti -->
+        <div class="container-fluid mb-5 px-5 ">
+            <div class="row gy-4 ">
+                <div class="col-12 col-sm-6 ">
+                    <div class="d-flex align-items-center mb-3">
+                        <div>
+                            <img src="../assets/propic.png" alt="profile-pic" class="profile-pic me-2">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0 ">
+                                Noemi
+                            </h6>
+                            <div>
+                                Jan 2021
+                            </div>
+                        </div>
+                    </div> 
+                    <div >
+                        Contrary to Other reviews, I was cold and couldn•t figure out how to turn on the heating...Otherwise amazing house.
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div>
+                            <img src="../assets/propic.png" alt="profile-pic" class="profile-pic me-2">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-0 ">
+                                Enrico
+                            </h6>
+                            <div>
+                                Jan 2021
+                            </div>
+                        </div>
+                    </div> 
+                    <div>
+                        Amazing place. I've been here with my daughter to takee pictures and we were not disappointed!
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
