@@ -1,9 +1,3 @@
-.simulazione-nav{
-    background-color: red;
-    /* width: 100vw; */
-    height: 70px;
-}
-
 /* Stilizzo il contenuto principale fornendogli delle caratteristiche generali */
 main{
     max-width: 1300px;
