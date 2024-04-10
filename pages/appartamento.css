@@ -1,9 +1,4 @@
 /* Stilizzo la navbar */
-.bi-person-circle{
-    background-color: red;
-    border-radius: 50%;
-}
-
 .dropdown-toggle::after{
     display: none;
 }
