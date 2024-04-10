@@ -1,3 +1,17 @@
+/* Stilizzo la navbar */
+img {
+    width: 100%;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+.dropdown:hover{
+        box-shadow: var(--bs-box-shadow-lg);
+}
+
+/* Override line-height icoe bootstrap */
 i[class^="bi-"]::before {
     line-height: 1.2;
 }
