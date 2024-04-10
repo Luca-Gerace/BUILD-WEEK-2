@@ -10,8 +10,7 @@
 }
 
 .main {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(./assets/home.jpg);
+  background: /*linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),*/ url(./assets/home.jpg);
   background-size: cover;
   /* object-position: 55% 0; */
 
@@ -29,6 +28,7 @@
 }
 /*======HEADER=====*/
 
+/* BOZZA 1 */
 #basic-addon2 .d-flex {
   border-radius: 50%;
 
@@ -45,7 +45,39 @@
 .input-group-text {
   height: 4rem;
 }
-
+/* Bordi bozza 1 */
 nav .input-group input {
   border: #ffffe0 solid 1px;
 }
+
+.input-group input:hover {
+  background-color: #dddddd;
+  border-radius: 50%;
+}
+
+/*=========================================================*/
+
+/* BOZZA 2*/
+
+.form-floating input:hover {
+  background-color: #dddddd;
+  border-radius: 50%;
+}
+
+.position-absolute {
+  top: 10px;
+  right: 10px;
+  border-radius: 100%;
+  background-color: #e41d56;
+  padding: 0.5rem;
+}
+
+.position-absolute svg {
+  fill: #fff;
+}
+
+.form-floating .form-control input:nth-child(1) {
+  border: #ffffe0 solid 1px;
+  background-color: lime;
+}
+/* BOZZA 2*/
