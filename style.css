@@ -117,6 +117,12 @@ body, html{
     margin-left: 10px;
 }
 
+
+/* img città */
+img.city {
+    max-width: 100px;
+}
+
 @media (min-width:841px){
     .ciao{
         margin-left: -500px;
