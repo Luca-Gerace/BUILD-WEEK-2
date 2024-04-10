@@ -55,7 +55,7 @@ cities.forEach(city => {
 
     // Innserisco le info della città nel div
     cityColumn.innerHTML = `
-    <a href="genova.html" class="text-decoration-none text-black mb-3">
+    <a href="pages/genova.html" class="text-decoration-none text-black mb-3">
         <div class="d-flex align-items-center pe-3">
             <img src="${city.image}" class="city rounded-4 img-thumbnail border-0" alt="${city.location}" />
             <div class="d-flex flex-column ps-3">          
