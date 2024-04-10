@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*======HEADER=====*/
+.navbar {
+  background-color: #000;
+}
+
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./assets/home.jpg);
+  background-size: cover;
+  /* object-position: 55% 0; */
+
+  background-position: 20% 65%;
+  min-height: 85vh;
+  width: 100%;
+}
+
+.main h1 {
+  margin-top: 3.5rem;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #fff;
+  width: 2rem;
+}
+/*======HEADER=====*/
+
+#basic-addon2 .d-flex {
+  border-radius: 50%;
+
+  background-color: #e41d56;
+  padding: 1rem;
+}
+
+#basic-addon2 svg {
+  border-radius: 50%;
+  fill: #fff;
+  color: #fff;
+}
+
+.input-group-text {
+  height: 4rem;
+}
+
+nav .input-group input {
+  border: #ffffe0 solid 1px;
+}
