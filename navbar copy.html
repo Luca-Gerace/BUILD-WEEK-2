@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    
+    <title>Document</title>
+
+    <style>
+      .navbar {
+        background-color: #000;
+      }
+
+      .navbar img {
+        width: 6.5rem;
+      }
+
+      .dropdown-item {
+        color: #505050;
+      }
+
+      .dropdown-item:hover {
+        background-color: #f7f7f7;
+        transition: 150ms all;
+        color: #000;
+      }
+
+      .btn-group {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-black" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/logo.png" class="img-fluid"
+        /></a>
+        <form class="d-sm-block d-md-block d-lg-none" role="search">
+          <input
+            class="form-control rounded-5 me-2 bg-light"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="border-1 border-white rounded-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#fff"
+              class="bi bi-filter-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M7 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+          </span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-lg-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Places to stay</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experiences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Online Experiences</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Profilo / testo / icona mondo -->
+        <div
+          class="d-lg-flex justify-content-lg-evenly align-items-lg-center d-md-none d-none d-sm-none d-none"
+        >
+          <span class="text-white">Become a host</span>
+          <!-- Icona mondo -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ms-lg-5 ms-md-3"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="display: block; height: 18px; width: 18px; fill: #fff"
+          >
+            <path
+              d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"
+            ></path>
+          </svg>
+          <div
+            class="btn-group border rounded-5 bg-white ms-lg-5 me-lg-5 ms-md-3 me-md-3"
+            data-bs-toggle="dropdown"
+          >
+            <div
+              class="btn-transparent d-flex align-items-center p-1"
+              style="width: 4rem; height: 2.5rem"
+            >
+              <!-- Icona 3 linee -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  fill: none;
+                  height: 16px;
+                  width: 16px;
+                  stroke: #696969;
+                  stroke-width: 3;
+                  overflow: visible;
+                "
+              >
+                <g fill="none"><path d="M2 16h28M2 24h28M2 8h28"></path></g>
+              </svg>
+              <!-- Icona profilo -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ms-2"
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="display: block; height: 35px; width: 35px; fill: #696969"
+              >
+                <path
+                  d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"
+                ></path>
+              </svg>
+            </div>
+            <div class="">
+              <div
+                type="button"
+                class="rounded-5"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              ></div>
+              <ul class="dropdown-menu bg-white dropdown-menu-lg-end mt-2">
+                <li>
+                  <button class="dropdown-item" type="button">Sign up</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">Log in</button>
+                </li>
+                <li><hr class="dropdown-divider border-secondary" /></li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Gift cards
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Airbnb your home
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Help Centre
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Fine profilo /testo / icona -->
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
