@@ -128,12 +128,18 @@ img {
 
 }
 
+/* @media screen and (max-width: 575px) {
+    .prima-colonna-immagini, .seconda-colonna-immagini{
+        padding: 0;
+    }
+} */
+
 /* Stilizzo la finestrina per vedere i prezzi */
 .card{
     margin-top: 10vh;
     top: 10vh;
-    /* margin-bottom: 10vh; */
     position: sticky;
+    min-width: 340px;
 }
 
 @media screen and (max-width: 991px) {
@@ -146,12 +152,12 @@ img {
     color: rgb(255, 56, 92);
 }
 
-.btn.fw-bold{
+.btn.fw-bold, .button-prenota{
     background-color: rgb(255, 56, 92);
 }
 
 input[type=date]{
-    width: 100%;
+    width: 100%; 
     height: 100%;
     border: none;
 }
@@ -161,6 +167,7 @@ input[type=date]:focus{
     height: 100%;
     border: none;
     outline: none;
+
 }
 
 .form-control {
@@ -214,7 +221,7 @@ footer .m-auto{
     padding-left: 2rem;
 }
 
-footer .border-bottom, footer{
+footer .border-bottom, footer, .bordo-grigio{
     border-color: rgb(221, 221, 221);
 }
 

@@ -51,7 +51,7 @@ cities.forEach(city => {
     let cityColumn = document.createElement("div");
     
     // Aggiungo al div le classi bootstrap
-    cityColumn.classList.add("col-6", "col-md-4", "col-lg-3", "d-flex", "flex-column");
+    cityColumn.classList.add("col-12", "col-sm-6", "col-md-4", "col-lg-3", "d-flex", "flex-column" );
 
     // Innserisco le info della città nel div
     cityColumn.innerHTML = `
