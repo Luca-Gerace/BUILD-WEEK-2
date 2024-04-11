@@ -4,15 +4,49 @@ body, html{
     margin: 0;
 }
 
-.goNear{
-    width: 100vw;
-    height: 800px;
-    background-image: url(assets/home.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-    display: flex;
-    justify-content: center;
+/* NAV BAR */
+.navbar {
+  background-color: #000;
 }
+
+.navbar img {
+  width: 6.5rem;
+}
+
+.dropdown-item {
+  color: #505050;
+}
+
+.dropdown-item:hover {
+  background-color: #f7f7f7;
+  transition: 150ms all;
+  color: #000;
+}
+
+.btn-group {
+  cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.main {
+    background: /*linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),*/ url(./assets/home.jpg);
+    background-size: cover;
+    /* object-position: 55% 0; */
+  
+    background-position: 20% 65%;
+    min-height: 85vh;
+    width: 100%;
+  }
+  
+  .main h1 {
+    margin-top: 3.5rem;
+    font-size: 5.5rem;
+    font-weight: 700;
+    color: #fff;
+    width: 2rem;
+  }
+
 
 /* RICERCA */
 #search{
@@ -20,7 +54,7 @@ body, html{
     width: 850px;
     min-height: 80px;
     height: 80px;
-    display: flex;
+    /* display: flex; */
     border-radius: 40px;
     padding-top: 10px;
 }
@@ -31,7 +65,6 @@ body, html{
     margin-left: 20px;
     margin-top: 5px;
 }
-
 
 .checkIn{
     margin-right: 30px;
@@ -96,10 +129,7 @@ body, html{
     background-color: rgb(199, 85, 85);
 }
 
-.ciao{
-    color: rgb(255, 255, 255);
-    position: absolute;
-    font-weight: bolder;
+h1 {
     line-height: 100px;
     font-size: 120px;
     margin-top: 400px;
@@ -161,9 +191,9 @@ footer li.fw-semibold:hover{
 
 
 @media screen and (max-width: 575px) {
-    .ciao{
+    /* .ciao{
         margin-left: -35%;
-    }
+    } */
     .footer-line2{
         flex-direction: column;
         padding-left: 2rem;
@@ -185,9 +215,9 @@ footer li.fw-semibold:hover{
 }
 
 @media (max-width:840px){
-    .ciao{
+    /* .ciao{
         margin-left: -300px;
-    }
+    } */
 
     #search{
         flex-direction: column;
@@ -233,9 +263,9 @@ footer li.fw-semibold:hover{
 }
 
 @media (min-width:841px){
-    .ciao{
+    /* .ciao{
         margin-left: -500px;
-    }
+    } */
 }
 
 @media screen and (min-width: 768px ) and (max-width: 1199px) {
@@ -250,9 +280,9 @@ footer li.fw-semibold:hover{
 }
 
 @media (min-width:1100px){
-    .ciao{
+    /* .ciao{
         margin-left: -700px;
-    }
+    } */
 }
 
 @media screen and (min-width: 1200px) {
