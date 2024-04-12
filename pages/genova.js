@@ -109,7 +109,7 @@ for (let i = 0; i <= stays.length; i++) {
           <span>${stays[i].review} ratings</span>
         </div>
         <div class="d-flex">
-          <span>${stays[i].type}</span>
+          <span class="text-capitalize">${stays[i].type}</span>
           <span class="px-1">•</span>
           <span>${stays[i].city}</span>
         </div>

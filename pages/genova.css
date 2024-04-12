@@ -1,4 +1,4 @@
-/* Stilizzo la navbar */
+/* NAV BAR */
 img {
     width: 100%;
 }
@@ -11,13 +11,30 @@ img {
         box-shadow: var(--bs-box-shadow-lg);
 }
 
+#customInput {
+    width: 85%;
+}
+
+#customFilters {
+    overflow-x: scroll;
+    width: 100%;
+}
+
+/* Hide scrollbar */
+#customFilters::-webkit-scrollbar {
+    display: none;
+}
+
+.customFilter:hover {
+    border-bottom: 2px solid #000
+}
+
 /* Override line-height icoe bootstrap */
-i[class^="bi-"]::before {
+i[class^="bi-"]:not([class^="bi-filter"]):before {
     line-height: 1.2;
 }
 
-
-/* Stilizzo il footer */
+/* FOOTER */
 footer{
     background-color: rgb(247, 247, 247);
     width: 100vw;
@@ -66,6 +83,12 @@ footer li.fw-semibold:hover{
 }
 
 @media screen and (max-width: 767px) {
+    .navbar {
+        width: 100%;
+    }
+    .hero {
+        margin-top: 120px;
+    }
     .footer-line2{
         flex-direction: column;
         padding-left: 2rem;

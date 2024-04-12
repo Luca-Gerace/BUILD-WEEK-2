@@ -43,8 +43,26 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar pt-3 pb-0 d-md-none border-bottom position-fixed top-0 bg-white shadow-sm">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+            <div id="customInput" class="input-group">
+                <span class="input-group-text bg-transparent border-end-0 rounded-start-5" id="basic-addon1"><i class="bi-search"></i></span>
+                <input type="text" class="form-control border-start-0 rounded-end-5" placeholder="Location" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button type="button" class="btn btn-light border rounded-5"><i class="bi-filter"></i></button>
+        </div>
+        <div id="customFilters" class="row flex-nowrap pt-3 mx-3 pb-0">
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2 border-bottom border-2 border-dark"><i class="bi-house"></i><small>House</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-building"></i><small>Room</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-thermometer"></i><small>Beach</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-cash"></i><small>Cheap</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-camera"></i><small>Secure</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-egg-fried"></i><small>Eat</small></div>
+            <div class="customFilter col-2 d-flex flex-column align-items-center pb-2"><i class="bi-bootstrap"></i><small>Bootstrap</small></div>
+        </div>
+    </nav>
     <!-- Hero Section -->
-    <div class="container pt-5">
+    <div class="hero container pt-5">
         <div class="row">
             <div class="col">
                 <small id="stayCounter" class="text-black-50"></small>
@@ -206,5 +224,6 @@
     </footer>
     <!-- custom js -->
     <script src="genova.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ body, html{
 
 .btn-group {
     cursor: pointer;
-  }
+}
   
 .pointer:hover{
     cursor: pointer;
@@ -131,13 +131,10 @@ h1 {
     flex-direction: column;
 }
 
-
-
 /* SECTION CITTA' */
 img.city {
     max-width: 100px;
 }
-
 
 /* FOOTER */
 footer{
