@@ -11,8 +11,40 @@ img {
         box-shadow: var(--bs-box-shadow-lg);
 }
 
+/* NAV BAR MOBILE */
 #customInput {
-    width: 85%;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+}
+
+#customInput .input-group-text {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#customInput .form-control {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#customInput .form-control::placeholder {
+    color:#000;
+    font-weight: 500;
+    position: absolute;
+    top: 12px;
+}
+#customInput::after {
+    content: "Any week • Add guests";
+    color: #919191;
+    font-size: 12px;
+    position: absolute;
+    top: 32px;
+    left: 52px;
+}
+
+#customInput + button i {
+    font-size: 30px;
 }
 
 #customFilters {
