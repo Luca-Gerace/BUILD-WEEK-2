@@ -213,6 +213,12 @@ footer{
     width: 100vw;
 }
 
+@media screen and (max-width: 991px) {
+    footer{
+        margin-bottom: 80px;
+    }
+}
+
 footer .m-auto{
     max-width: 1300px
 }
